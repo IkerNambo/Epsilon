@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+{% block navbar %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta name="viewport" content"width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static "allstyle/homestyle.css" %}">
+        <title>Welcome To Epsilon!</title>
+       
+    </head>  
+
+        <body>
+        
+            <div class='Description'>
+                <h1 id='EpsilonAbButton'>Epsilon</h1>
+                <h2>Welcome!</h2>
+                <p>This is a test for a webchat app.. have a good time checking it out! <br>
+                    kinda sucks at the moment... but it'll get better!
+                    </p>
+            </div>
+           <div class='allstuff'>
+            
+            <a href="{% url "EmptyView" %}"><button class='buttons' id='ExploreButton'>Start Chatting!</button></a> 
+            {% if auuser == False %}
+            <a href="{% url "LoginView" %}"><button class='buttons' id='LoginButton'>Join up!</button></a>
+            {% endif %}
+           </div>
+                      <article class='newstab'>
+            
+            <article class='inarticle'>
+                <h2>Cool limited edition Plush</h2>
+                <p>Come get plushies from your favorite characters</p>
+                <img img"/static/SplashPlushies.png" alt="">
+                <a href="">See more</a>
+            </article>
+             <article class='inarticle'>
+                <h2>Revamped Settings!</h2>
+                <p>We Changed the settings tab to be more user-friendly</p>
+                <a href="">See more</a>
+            </article>
+             <article class='inarticle'>
+             <h2>Halloween Event</h2>
+             <p>Buy new emotes to celebrate halloween!</p>
+             <a href="">See more</a>
+            </article>
+          
+           </article>
+       
+        </body>
+        
+    
+</html>
+{% endblock navbar %}

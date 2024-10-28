@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html{
+    background-image: url("/static/backgroundhome.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.maincontent{
+    
+    color: aliceblue;
+    margin: auto;
+    width: 40%;
+    margin-top: 13rem;
+}
+#logintext{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+#email-input{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.registerinput{
+    background-color: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    color: aliceblue;
+    outline: none;
+}
+
+.savebtn{
+    margin-top:1rem;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: transparent;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+    color: aliceblue;
+}
+.formcontent{
+    text-align: center;
+    border-color: rgb(6, 6, 6), solid;
+    background-image: url(/static/abstractart.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+ 
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+}

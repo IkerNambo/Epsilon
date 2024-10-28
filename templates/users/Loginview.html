@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block navbar %}
+<head>
+    <title>Epsilon Register</title>
+    <link rel="stylesheet" href="{% static "users/LoginView.css" %}">
+    <meta name="viewport" content="width=600","initial-scale=1">
+</head>
+<div class='maincontent'>
+    <h1 style='text-align: center;' id='logintext'>Register</h1>
+ <div class='formcontent'>
+  {% for message in messages %}
+  {{ message }}
+  {% endfor %}
+  <form method='POST'> {% csrf_token %}
+      {{form.as_p}}
+    
+  <input type="submit" value='Register' class='savebtn'/>
+
+  </form>
+  </div>
+</div>
+{% endblock navbar %}

@@ -1,0 +1,80 @@
+nav{
+    background-color: white;
+    justify-content: space-between;
+    
+    display: flex;
+    position: sticky;
+    align-items: center;
+}
+nav > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    font-size: 1.3rem;
+}
+nav > ul > li{
+    padding-left: 2rem;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+nav > ul > li > a:hover{
+    color: darkgrey;
+}
+#Epsilon{
+    font-family: fantasy;
+    padding-right: 2rem;
+}
+
+#Epsilon > a{
+    text-decoration: none;
+}
+.navlogreg{
+    display: flex;
+    background-color: rgb(6, 0, 97);
+    border-radius: 4px;
+   
+    margin-left: 2rem;
+    color:aliceblue;
+    justify-content: space-between;
+    position: sticky;
+    text-align: center;
+}
+.navlogreg > li > a{
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#oneineedmove{
+    
+    padding-left: 0.5rem;
+    padding-right: 0.3rem;
+    background-color: rgb(86, 0, 0);
+    border-radius: 4px;
+}
+
+#oneineedmove:hover{
+    background-color: rgb(139, 1, 1);
+    
+} 
+#oneineedmove2{
+    padding-right: 1rem;
+    padding-left: 1.0rem;
+    
+    
+    
+}
+#oneineedmove2:hover{
+    background-color:rgb(10, 0, 147); 
+    border-radius: 4px;
+}

@@ -1,0 +1,28 @@
+{% load static %}
+<link rel="stylesheet" href="{% static "allstyle/basestyle.css" %}">
+<nav> 
+    <ul>
+        <li><a href="{% url "EmptyView" %}">Home</a></li>
+        <li><a href="">Chat</a></li>
+        <li><a href="">About</a></li>
+        {% if user.is_authenticated  %}
+        <li><a href="">{{user}}</a></li>
+        <li><a href="">Log out</a></li>
+        {% else %}
+        <div class='navlogreg'>
+          <li id='oneineedmove' ><a href="{% url "LoginView" %}" >Register</a></li>
+          <li id='oneineedmove2' ><a href="" >Login</a></li>
+        </div>
+        {% endif %}
+        
+    </ul>
+    <h1 id='Epsilon'><a href="{% url "EmptyView" %}">Epsilon</a></h1>
+</nav>
+
+
+
+
+{% block navbar %}
+{% endblock navbar %}
+
+
