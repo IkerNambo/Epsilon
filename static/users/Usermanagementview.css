@@ -1,0 +1,28 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    --background-color:white;
+    --text-color:rgb(0, 0, 0);
+    
+    --icon-color:rgb(255, 255, 255);
+    --icon-background-color: rgb(10, 10, 10);
+}
+.darkmode{
+    --background-color: rgb(46, 46, 88);
+    --text-color:aliceblue;
+    --icon-color:rgb(11, 11, 11);
+    --icon-background-color: rgb(214, 214, 214);
+}
+
+html{
+    background-color: var(--background-color);
+}
+
+@media (prefers-color-scheme: dark){
+    html{
+        background-color:rgb(46, 46, 88);
+        color:aliceblue ;
+    }
+}
