@@ -2,22 +2,37 @@
 {% load static %}
 {% block navbar %}
 <head>
-    <title>Epsilon Register</title>
+    <title>Epsilon Login</title>
     <link rel="stylesheet" href="{% static "users/LoginView.css" %}">
-    <meta name="viewport" content="width=600","initial-scale=1">
 </head>
-<div class='maincontent'>
-    <h1 style='text-align: center;' id='logintext'>Register</h1>
- <div class='formcontent'>
-  {% for message in messages %}
-  {{ message }}
-  {% endfor %}
-  <form method='POST'> {% csrf_token %}
-      {{form.as_p}}
-    
-  <input type="submit" value='Register' class='savebtn'/>
+<div class='Allform'>
+    <h1 style='text-align: center;' id='logintext'>Login</h1>
+  <div class='FormContent'>
+    <div>
+        {% for message in messages %}
+        {{ message }}
+        {% endfor %}
+        <form method="POST"> {% csrf_token %}
+            <div class="form-group">
+                <label class="text-primary text-dark font-weight-bold">Enter Username</label>
+                <input type="text" class="form-control" name="username" placeholder="Username">
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="text-primary text-dark font-weight-bold">Enter Email  </label>
+                <input type="email" class="form-control" name="email" placeholder="Email">
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="text-primary text-dark font-weight-bold">Enter Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <button type="submit" value='Login' class='savebtn'>Login</button>
+          </form>
 
-  </form>
+    </div>
+   
   </div>
+   <h5 class='AnQuestion'>Don't have an account? <a href="{% url "RegisterView" %}">Sign up</a></h5>
 </div>
 {% endblock navbar %}

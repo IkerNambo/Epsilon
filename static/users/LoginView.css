@@ -1,8 +1,7 @@
 *{
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
 }
-
 
 html{
     background-image: url("/static/backgroundhome.jpg");
@@ -11,33 +10,23 @@ html{
     background-position: center;
     background-attachment: fixed;
 }
-.maincontent{
-    
-    color: aliceblue;
+.Allform{
     margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 40%;
-    margin-top: 13rem;
+    margin-top: 10rem;
 }
-#logintext{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-bottom: 1rem;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
-}
-
-#email-input{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-.registerinput{
-    background-color: transparent;
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+.FormContent{
+    text-align: center;
     color: aliceblue;
-    outline: none;
-}
+    align-content: center;
+    height: 12rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(/static/abstractlogin.jpg);
+    border-radius: 10px;
 
+}
 .savebtn{
     margin-top:1rem;
     width: 10rem;
@@ -47,18 +36,30 @@ html{
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
     color: aliceblue;
 }
-.formcontent{
-    text-align: center;
-    border-color: rgb(6, 6, 6), solid;
-    background-image: url(/static/abstractart.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    color: rgb(255, 255, 255);
+.form-control{
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: aliceblue;
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
- 
-    padding-top: 1rem;
+}
+.form-control:active{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+#logintext{
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding-bottom: 1rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    border-radius: 10px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+.AnQuestion{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+
 }
