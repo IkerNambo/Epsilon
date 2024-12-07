@@ -41,7 +41,7 @@
     font-family: fantasy;
 }
 html{
-    background-image: url("/static/backgroundhome.jpg");
+    background-image: url("/static/images/backgroundhome.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

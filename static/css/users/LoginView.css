@@ -4,7 +4,7 @@
 }
 
 html{
-    background-image: url("/static/backgroundhome.jpg");
+    background-image: url("/static/images/backgroundhome.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -23,7 +23,7 @@ html{
     align-content: center;
     height: 12rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url(/static/abstractlogin.jpg);
+    background-image: url(/static/images/abstractlogin.jpg);
     border-radius: 10px;
 
 }

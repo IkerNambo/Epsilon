@@ -11,7 +11,7 @@
 }
 
 html{
-    background-image: url("/static/backgroundhome.jpg");
+    background-image: url("/static/images/backgroundhome.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -44,7 +44,7 @@ html{
 .formcontent{
     text-align: center;
     border-color: rgb(6, 6, 6), solid;
-    background-image: url(/static/abstractart.webp);
+    background-image: url(/static/images/abstractart.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
