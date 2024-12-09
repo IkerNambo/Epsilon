@@ -19,7 +19,7 @@
     position:absolute;
     top: 46%;
     left: 5.3%;
-    margin-bottom: pass;
+    margin-bottom: none;
     justify-content: left;
 }
 
@@ -65,6 +65,7 @@ html{
     height: 40%;
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--article-text-color);
 }
 .inarticle{
     padding-right: 3rem;
@@ -75,6 +76,7 @@ html{
     margin-top: 1rem;
     margin-right: 1rem;
     margin-left: 1rem;
+    color: var(--article-text-color);
 
   
 }
