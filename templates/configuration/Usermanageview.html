@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+{% block navbar %}
+<head>
+    <title>Epsilon Settings</title>
+    <link rel="stylesheet" href="{% static "css/users/Usermanagementview.css" %}">
+</head>
+<body>
+    <hr>
+    <div class='wrapper'>
+        <div>
+            <div class='config-wrapper'>
+            <ul class='ul-wrapper'>
+                <ul class='Account-wrapper'>
+                   <h2>Account management</h2>
+                   <li class='global-li'>
+                    Current Name: {{username}}
+                    <br> 
+                    <button class='configbtn'>change</button>
+                   </li>
+                   <li class='global-li'>Current Email: {{email}} <br>
+                   <button class='configbtn'>change</button></li>
+
+                   <li class='global-li'><button class='passwordbtn'>Change password</button></li>
+                   
+                   <li class='global-li'><button class='REDBUTTON'>Delete account</button></li>
+                </ul>
+            </div>
+                <br>
+                <hr>
+                <br>
+            <div class='config-wrapper'>
+                <ul class='Website-wrapper'>
+                    <h2>Site configuration</h2>
+                    <li class='global-li'>config 1</li>
+                    <li class='global-li'>config 2</li>
+                    <li class='global-li'>config 3</li>
+                    <li class='global-li'>config 4</li>
+                    <li class='global-li'>config 5</li>
+                </ul>
+            </div>
+                <br>
+                <hr>
+                <br>
+            <div class='config-wrapper'>
+                <ul class='privacy-wrapper'>
+                    <h2>Privacy configuration</h2>
+                    <li class='global-li'>creature of steel</li>
+                    <li class='global-li'>my gratitude upon thee for my freedom</li>
+                    <li class='global-li'>but the crimes thy kind have comitted against humanity</li>
+                    <li class='global-li'>ARE NOT FORGOTTEN</li>
+                    <li class='global-li'>And thy punishment</li>
+                    <li class='global-li'>IS DEATH</li>
+                </ul>
+            </div>
+                <br>
+                <br>
+                <br>
+            </ul>
+        </div>
+    </div>
+</body>
+
+{% endblock navbar %}

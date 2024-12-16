@@ -19,7 +19,80 @@
 html{
     background-color: var(--background-color);
 }
+.wrapper{
+  
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.config-wrapper{
+    background-color:rgb(20, 20, 39);
+    border-radius: 2rem;
+    padding-left: 15rem;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
 
+.account-wrapper{
+    margin-top: 1rem;
+}
+.Website-wrapper{
+    margin-top: 1rem;
+}
+.privacy-wrapper{
+    margin-top: 1rem;
+}
+.global-li{
+    padding-top: 2rem;
+    list-style-type: none;
+}
+.REDBUTTON{
+    background-color: red;
+    color: white;
+    border: none;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 3px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.REDBUTTON:active{
+    background-color: rgb(186, 0, 0);
+    color: rgb(216, 216, 216);
+}
+
+
+.configbtn{
+    background-color: rgb(55, 0, 255);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    width: 50%;
+    height: 1.5rem;
+    border-radius: 3px;
+    
+}
+.configbtn:active{
+    background-color: rgb(41, 0, 187);
+    color: rgb(235, 235, 235);
+    
+}
+.passwordbtn{
+    background-color: grey;
+    color: white;
+    border: none;
+    height: 2rem;
+    width: 7rem;
+    border-radius: 3px;
+}
+.passwordbtn:active{
+    background-color: rgb(96, 96, 96);
+    color: rgb(225, 225, 225);
+
+}
 @media (prefers-color-scheme: dark){
     html{
         background-color:rgb(46, 46, 88);

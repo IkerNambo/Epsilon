@@ -22,7 +22,7 @@
             </div>
            <div class='allstuff'>
             
-            <a href="{% url "EmptyView" %}"><button class='buttons' id='ExploreButton'>Start Chatting!</button></a> 
+            <a href="{% url "Lobby" %}"><button class='buttons' id='ExploreButton'>Start Chatting!</button></a> 
             {% if auuser == False %}
             <a href="{% url "RegisterView" %}"><button class='buttons' id='LoginButton'>Join up!</button></a>
             {% endif %}

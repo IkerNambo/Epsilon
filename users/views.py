@@ -53,7 +53,14 @@ def LoginView(request, *ruby, **rose):
 
 def UserManageView(request, *blake, **belladona):
     if request.user.is_authenticated == True:
-      return render(request, 'users/Usermanageview.html')
+      username = request.user
+      email = request.user.email
+      
+      context = {
+          'username': username,
+          'email': email
+      }
+      return render(request, 'configuration/Usermanageview.html', context)
     else:
         return redirect('EmptyView')
   
