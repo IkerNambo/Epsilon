@@ -152,7 +152,7 @@ nav > ul > li > a:hover{
 
 
 
-@media (prefers-color-scheme: dark){
+/* @media (prefers-color-scheme: dark){
     nav {
         background-color: rgb(20, 20, 39);
     }
@@ -170,4 +170,4 @@ nav > ul > li > a:hover{
     .darkmode #theme-switch svg:first-child{
         display: block;
     }
-}
+} */

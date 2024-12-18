@@ -12,3 +12,6 @@ def EmptyView(request, *args, **kwargs):
         'auuser': authuser
     }
     return render(request, 'home.html', context)
+
+def AboutView(request, *golden, **ray):
+    return render(request, 'about.html', {})

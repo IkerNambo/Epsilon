@@ -3,24 +3,25 @@
     margin: 0px;
 }
 :root{
-    --background-color:white;
-    --text-color:rgb(0, 0, 0);
+    --background-color:rgb(140, 140, 140);
+    --text-color:rgb(255, 255, 255);
     
     --icon-color:rgb(255, 255, 255);
     --icon-background-color: rgb(10, 10, 10);
 }
 .darkmode{
-    --background-color: rgb(46, 46, 88);
+    --html-background-color:rgb(45, 45, 73);
+    --background-color: rgb(20, 20, 39);
     --text-color:aliceblue;
     --icon-color:rgb(11, 11, 11);
     --icon-background-color: rgb(214, 214, 214);
 }
 
-html{
-    background-color: var(--background-color);
+body    {
+    background-color: var(--html-background-color);
 }
 .wrapper{
-  
+    color: var(--text-color);
     margin: auto;
     margin-left: auto;
     margin-right: auto;
@@ -28,7 +29,7 @@ html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .config-wrapper{
-    background-color:rgb(20, 20, 39);
+    background-color: var(--background-color);
     border-radius: 2rem;
     padding-left: 15rem;
     padding-bottom: 3rem;
@@ -93,9 +94,9 @@ html{
     color: rgb(225, 225, 225);
 
 }
-@media (prefers-color-scheme: dark){
+/* @media (prefers-color-scheme: dark){
     html{
         background-color:rgb(46, 46, 88);
         color:aliceblue ;
     }
-}
+} */

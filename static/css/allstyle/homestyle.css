@@ -96,7 +96,7 @@ html{
     background-color: rgba(128, 128, 128, 0.428);
 
 }
-@media (prefers-color-scheme: dark){
+/* @media (prefers-color-scheme: dark){
     .newstab{
         background-color: rgb(20, 20, 39);
     }
@@ -107,4 +107,4 @@ html{
     html{
         scrollbar-color: rgb(43, 43, 68) rgb(20, 20, 39);
     }
-}
+} */
