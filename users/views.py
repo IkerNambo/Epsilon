@@ -50,6 +50,7 @@ def LoginView(request, *ruby, **rose):
             loginmessage = messages.success(request, 'Information is incorrect')
     return render(request, 'users/Loginview.html' )
 
+# this section is dedicated entirely to the settings tab of the website
 
 def UserManageView(request, *blake, **belladona):
     if request.user.is_authenticated == True:
@@ -63,4 +64,37 @@ def UserManageView(request, *blake, **belladona):
       return render(request, 'configuration/Usermanageview.html', context)
     else:
         return redirect('EmptyView')
+
+def UsernameChangeView(request, *args, **kwargs):
+    if request.user.is_authenticated == True:
+      
+      
+      
+      
+      return render(request, 'configuration/usernamereset.html', {})
+    else:
+        return redirect('EmptyView')
+
+def EmailChangeView(request, *args, **kwargs):
+    if request.user.is_authenticated == True:
+      
+      
+      
+      
+      return render(request, 'configuration/emailreset.html', {})
+    else:
+      return redirect('EmptyView')
+
+def PasswordChangeView(request, *args, **kwargs):
+    if request.user.is_authenticated == True:
+      
+      
+      
+      
+      return render(request, 'configuration/passwordchange.html', {})
+    else:
+      return redirect('EmptyView')
+
+def AccountDeleteView(request, *args, **kwargs):
+    pass
   

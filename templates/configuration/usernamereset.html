@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block navbar %}
+
+<head>
+    <title>Epsilon Name change</title>
+    <link rel="stylesheet" href="{% static "css/configuration/namereset.css" %}">
+    <link rel="stylesheet" href="{% static "css/configuration/globalconfig.css" %}">
+</head>
+<body>
+    <div class='form-wrapper'>
+      <button class='backbutton'><a href="{% url "Settings" %}"><svg id='arrowicon' xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg></a></button>  
+
+        <form method="POST" class='form-control-config'> {% csrf_token %}
+
+            {{form.as_p}}
+            <div class="form-group">
+                <label class="">Enter New Username</label>
+                <input type="text" class="form-control-global" name="username" placeholder="Username">
+                
+                <br>
+
+                <label class="">Confirm New Username</label>
+                <input type="text" class="form-control-global" name="username2" placeholder="Username">
+            </div>
+            <button type="submit" value='Login' class='change-button-control'>Change</button>
+
+        </form>
+      
+    </div>
+
+</body>
+
+{% endblock navbar %}

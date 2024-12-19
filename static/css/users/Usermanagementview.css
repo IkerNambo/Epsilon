@@ -3,11 +3,12 @@
     margin: 0px;
 }
 :root{
-    --background-color:rgb(140, 140, 140);
-    --text-color:rgb(255, 255, 255);
+    --background-color:rgb(188, 188, 188);
+    --text-color:rgb(0, 0, 0);
     
     --icon-color:rgb(255, 255, 255);
     --icon-background-color: rgb(10, 10, 10);
+    --change-password-btn: grey;
 }
 .darkmode{
     --html-background-color:rgb(45, 45, 73);
@@ -15,9 +16,10 @@
     --text-color:aliceblue;
     --icon-color:rgb(11, 11, 11);
     --icon-background-color: rgb(214, 214, 214);
+    --change-password-btn: rgb(70, 70, 70);
 }
 
-body    {
+body{
     background-color: var(--html-background-color);
 }
 .wrapper{

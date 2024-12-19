@@ -1,0 +1,80 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+:root{
+    --body-background-color:white ;
+    --text-color: black;
+    --form-background-color: rgb(185, 185, 185) ;
+    --placeholder-color: rgb(94, 94, 94);
+    --arrow-color:rgb(0, 0, 0);
+    --arrow-border-color: rgb(45, 45, 73);
+
+
+}
+.darkmode{
+    --body-background-color: rgb(45, 45, 73);
+    --text-color: rgb(255, 255, 255);
+    --form-background-color: rgb(20, 20, 39);
+    --placeholder-color: rgb(199, 199, 199);
+    --arrow-color: white;
+    --arrow-border-color: white;
+}
+
+body{
+    background-color: var(--body-background-color);
+    color: var(--text-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form-wrapper{
+    border-radius: 1rem;
+    width: 50%;
+    height: 37%;
+    margin: auto;
+    margin-top: 11rem;
+    margin-bottom: 1rem;
+    background-color: var(--form-background-color);
+}
+
+.form-control-config{
+    text-align: center;
+}
+
+.form-control-global{
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    
+}
+.form-control-global::placeholder{
+    color: var(--placeholder-color);
+}
+
+.change-button-control{
+    margin-top:2rem;
+    border: solid;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 2rem;
+    background-color: transparent;
+    color:var(--text-color);
+}
+.backbutton{
+    position: relative;
+    text-align: right;
+    border: solid;
+    border-radius: 40px;
+    background-color: hsla(0, 0%, 100%, 0);
+    margin-top: 5px;
+    margin-left: 5px;
+    border-color: var(--arrow-border-color)
+}
+
+.backbutton svg{
+    fill: var(--arrow-color);
+}

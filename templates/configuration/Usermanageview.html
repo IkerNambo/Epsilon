@@ -6,24 +6,21 @@
     <link rel="stylesheet" href="{% static "css/users/Usermanagementview.css" %}">
 </head>
 <body>
-    <hr>
+ 
     <div class='wrapper'>
         <div>
             <div class='config-wrapper'>
             <ul class='ul-wrapper'>
                 <ul class='Account-wrapper'>
                    <h2>Account management</h2>
-                   <li class='global-li'>
-                    Current Name: {{username}}
-                    <br> 
-                    <button class='configbtn'>change</button>
-                   </li>
-                   <li class='global-li'>Current Email: {{email}} <br>
-                   <button class='configbtn'>change</button></li>
+                   <li class='global-li'>Current Name: {{username}}<br> 
+                   <a href="{% url "UsernameReset" %}"><button class='configbtn'>change</button></li></a>
 
-                   <li class='global-li'><button class='passwordbtn'>Change password</button></li>
+                   <li class='global-li'>Current Email: {{email}} <br>
+                   <a href="{% url "EmailReset" %}"><button class='configbtn'>change</button></li></a>
+                   <a href="{% url "PasswordReset" %}"><li class='global-li'><button class='passwordbtn'>Change password</button></li></a>
                    
-                   <li class='global-li'><button class='REDBUTTON'>Delete account</button></li>
+                    <li class='global-li'><button class='REDBUTTON'>Delete account</button></li>
                 </ul>
             </div>
                 <br>
