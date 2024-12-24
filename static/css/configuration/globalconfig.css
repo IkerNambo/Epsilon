@@ -10,8 +10,7 @@
     --placeholder-color: rgb(94, 94, 94);
     --arrow-color:rgb(0, 0, 0);
     --arrow-border-color: rgb(45, 45, 73);
-
-
+    --change-active-color: hsla(0, 0%, 45%, 0.411);
 }
 .darkmode{
     --body-background-color: rgb(45, 45, 73);
@@ -20,6 +19,8 @@
     --placeholder-color: rgb(199, 199, 199);
     --arrow-color: white;
     --arrow-border-color: white;
+    --change-active-color: hsla(0, 0%, 84%, 0.411);
+    
 }
 
 body{
@@ -28,6 +29,12 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+.title-wrapper{
+
+    text-align: center;
+
+}
 .form-wrapper{
     border-radius: 1rem;
     width: 50%;
@@ -36,6 +43,11 @@ body{
     margin-top: 11rem;
     margin-bottom: 1rem;
     background-color: var(--form-background-color);
+    overflow: auto;
+}
+
+.error-control{
+    list-style-type: none;
 }
 
 .form-control-config{
@@ -49,6 +61,8 @@ body{
     border-right: none;
     margin-top: 1rem;
     padding-top: 1rem;
+    list-style-type: none;
+    color: var(--text-color);
     
 }
 .form-control-global::placeholder{
@@ -63,6 +77,10 @@ body{
     border-radius: 2rem;
     background-color: transparent;
     color:var(--text-color);
+}
+.change-button-control:active{
+    /* background-color: hsla(0, 0%, 19%, 0.411); */
+    color:var(--change-active-color);
 }
 .backbutton{
     position: relative;

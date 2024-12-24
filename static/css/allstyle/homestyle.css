@@ -66,6 +66,7 @@ html{
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--article-text-color);
+    overflow: auto;
 }
 .inarticle{
     padding-right: 3rem;
@@ -77,6 +78,8 @@ html{
     margin-right: 1rem;
     margin-left: 1rem;
     color: var(--article-text-color);
+    
+   
 
   
 }
