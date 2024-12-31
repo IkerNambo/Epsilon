@@ -37,9 +37,10 @@ html{
     width: 10rem;
     height: 2rem;
     border-radius: 2rem;
-    background-color: transparent;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
-    color: aliceblue;
+    background-color: hsl(193, 66%, 86%);
+    border-color: aliceblue;
+    border-style: solid;
+    color: rgb(0, 0, 0);
 }
 .formcontent{
     text-align: center;
@@ -57,12 +58,18 @@ html{
     border-radius: 10px;
 }
 .form-control{
-    background-color: transparent;
+    background-color: white;
+    border-radius: 3px;
     border-top: none;
     border-left: none;
     border-right: none;
-    color: aliceblue;
+    border-bottom-color:black;
+    color: rgb(28, 28, 28);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+   
     margin-top: 1rem;
+}
+
+.form-control::placeholder{
+    color: grey;
 }

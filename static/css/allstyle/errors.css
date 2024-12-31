@@ -1,0 +1,43 @@
+.error-text{
+    color: white;
+    background-color: rgb(27, 27, 27);
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding-top: 1px;
+    padding-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 10%;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-right-color: red;
+    border-radius: 5px;
+    overflow: auto;
+
+}
+
+.error-text svg{
+    position: relative;
+    left: 0.5rem;
+    top: 0.3rem;
+}
+
+.login-error{
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    padding-bottom: 10px;
+    height: 15%;
+    
+
+}
+
+.name-error{
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 0px;
+    height: 12%;
+}

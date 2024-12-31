@@ -21,17 +21,17 @@ class UserForm(UserCreationForm):
             'email': None,
         }
    
-    username = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Username',
+    username = forms.CharField(label='',widget=forms.TextInput(attrs={'placeholder': 'Username',
                                                                 'class': 'form-control',
                                                                 }))
-    email = forms.CharField(widget=forms.EmailInput(attrs={'placeholder': 'Email',
+    email = forms.CharField(label='',widget=forms.EmailInput(attrs={'placeholder': 'Email',
                                                                 'class': 'form-control',
                                                                 }))
-    password1 = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'Password',
+    password1 = forms.CharField(label='',widget=forms.PasswordInput(attrs={'placeholder': 'Password',
                                                                 'class': 'form-control',
                                                                 'label': 'password'
                                                                 }))
-    password2 = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'Confirm Password',
+    password2 = forms.CharField(label='',widget=forms.PasswordInput(attrs={'placeholder': 'Confirm Password',
                                                                 'class': 'form-control',
                                                                 'label': 'password'
                                                                 }))
@@ -56,7 +56,7 @@ class ChangeEmailForm(UserChangeForm):
         fields = ['email']
         
         
-    email = forms.CharField(label='Enter new email', widget=forms.EmailInput(attrs={'placeholder': 'Email',
+    email = forms.CharField(label='', widget=forms.EmailInput(attrs={'placeholder': 'New Email',
                                                                 'class': 'form-control-global',
                                                                 }))
     def clean_email(self):
@@ -68,15 +68,15 @@ class ChangeEmailForm(UserChangeForm):
     
 class ChangePasswordForm(PasswordChangeForm):
     
-    old_password = forms.CharField(required=True, widget=forms.PasswordInput(attrs={
+    old_password = forms.CharField(label='',required=True, widget=forms.PasswordInput(attrs={
         'placeholder': 'old password',
         'class': 'form-control-global password-control',
     }))
-    new_password1 = forms.CharField(label='New Password',required=True, widget=forms.PasswordInput(attrs={
+    new_password1 = forms.CharField(label='',required=True, widget=forms.PasswordInput(attrs={
         'placeholder': 'New password',
         'class': 'form-control-global password-control',
     }))
-    new_password2 = forms.CharField(label='Confirm New Password',required=True, widget=forms.PasswordInput(attrs={
+    new_password2 = forms.CharField(label='',required=True, widget=forms.PasswordInput(attrs={
         'placeholder': 'Confirm New password',
         'class': 'form-control-global password-control',
     }))

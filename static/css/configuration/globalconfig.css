@@ -7,7 +7,7 @@
     --body-background-color:white ;
     --text-color: black;
     --form-background-color: rgb(185, 185, 185) ;
-    --placeholder-color: rgb(94, 94, 94);
+    --placeholder-color: rgb(0, 0, 0);
     --arrow-color:rgb(0, 0, 0);
     --arrow-border-color: rgb(45, 45, 73);
     --change-active-color: hsla(0, 0%, 45%, 0.411);
@@ -16,7 +16,7 @@
     --body-background-color: rgb(45, 45, 73);
     --text-color: rgb(255, 255, 255);
     --form-background-color: rgb(20, 20, 39);
-    --placeholder-color: rgb(199, 199, 199);
+    --placeholder-color: rgb(232, 232, 232);
     --arrow-color: white;
     --arrow-border-color: white;
     --change-active-color: hsla(0, 0%, 84%, 0.411);
@@ -46,9 +46,6 @@ body{
     overflow: auto;
 }
 
-.error-control{
-    list-style-type: none;
-}
 
 .form-control-config{
     text-align: center;

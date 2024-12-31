@@ -9,4 +9,5 @@ urlpatterns = [
     path('Settings/UsernameReset/', views.UsernameChangeView, name='UsernameReset'),
     path('Settings/EmailReset/', views.EmailChangeView, name='EmailReset'),
     path('Settings/PasswordReset/', views.PasswordChangeView, name='PasswordReset'),
+    path('Settings/DeleteAccount/', views.DeleteAccountView, name='DeleteAccount'),
 ]

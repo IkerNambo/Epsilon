@@ -24,7 +24,7 @@ def RegisterView(request,*args,**kwargs):
       else:
           UserForm() 
     except ValueError:
-        registermessage = messages.success(request, "Registration failed, check the information and try again")
+        messages.error(request, "Registration failed, check the information and try again")
     authuser = request.user.is_authenticated
 
   
@@ -47,7 +47,7 @@ def LoginView(request, *ruby, **rose):
             return redirect('EmptyView')
          
         else:
-            loginmessage = messages.success(request, 'Information is incorrect')
+            messages.error(request, 'Information is incorrect')
     return render(request, 'users/Loginview.html' )
 
 # this section is dedicated entirely to the settings tab of the website
@@ -80,7 +80,7 @@ def UsernameChangeView(request, *args, **kwargs):
               
               return redirect('Settings')
             else:
-                userms = messages.success(request, 'Please enter a valid name')
+                messages.error(request, 'Please enter a valid name')
       
         return render(request, 'configuration/usernamereset.html', {})
     else:
@@ -96,28 +96,6 @@ def EmailChangeView(request, *args, **kwargs):
           if form.is_valid():
               form.save()
               return redirect('Settings')
-            
-            
-        
-        # if request.method == 'POST':
-        #     form = request.POST.get('emailchangeform')
-        #     newemail = request.POST.get('email')
-        #     confirmemail = request.POST.get('email2')
-          
-        #     user = request.user
-        #     userlength = len(newemail)
-            
-        #     if newemail != '' and newemail is not None and userlength <= 50 and newemail == confirmemail:
-        #       user.email = newemail
-        #       user.save()
-              
-        #       return redirect('Settings')
-        #     elif newemail != confirmemail:
-        #         messages.error(request, 'The emails do not match')
-        #     else:
-        #         messages.error(request, 'Enter a valid email')
-      
-      
       
         context = {
             'form': form
@@ -143,6 +121,29 @@ def PasswordChangeView(request, *args, **kwargs):
     else:
       return redirect('EmptyView')
 
-def AccountDeleteView(request, *args, **kwargs):
-    pass
+def DeleteAccountView(request, *args, **kwargs):
+    if request.user.is_authenticated == True:
+        user = request.user
+           
+        if request.method == 'POST':
+            deleteform = request.POST.get('deleteuser')
+            uid = request.user.id
+            
+            
+            if deleteform == 'CONFIRM':
+                print('Done done done.. aaaaaand done')
+                user.delete()
+                return redirect('EmptyView')
+              
+            else:
+                messages.error(request, "Failed, You didn't type CONFIRM in all caps.")
+                print(uid)
+                print('failed')
+                print(deleteform)
+            
+            
+        return render(request, 'configuration/accountdelete.html')
+    
+    else:
+        return redirect('EmptyView')
   
