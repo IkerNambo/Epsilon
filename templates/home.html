@@ -13,40 +13,51 @@
 
         <body>
         
+            
+
+           <div class='allstuff'>
+
             <div class='Description'>
-                <h1 id='EpsilonAbButton'>Epsilon</h1>
+                {% comment %} <h1 id='EpsilonAbButton'>Epsilon</h1> {% endcomment %}
                 <h2>Welcome!</h2>
                 <p>This is a test for a webchat app.. have a good time checking it out! <br>
                     kinda sucks at the moment... but it'll get better!
-                    </p>
+                 </p>
             </div>
-           <div class='allstuff'>
+            
             
             <a href="{% url "Lobby" %}"><button class='buttons' id='ExploreButton'>Start Chatting!</button></a> 
             {% if auuser == False %}
             <a href="{% url "RegisterView" %}"><button class='buttons' id='LoginButton'>Join up!</button></a>
             {% endif %}
+
            </div>
-                      <article class='newstab'>
+
+          <div class='newstab'>
             
             <article class='inarticle'>
                 <h2>Cool limited edition Plush</h2>
                 <p>Come get plushies from your favorite characters</p>
-                <img img"/static/SplashPlushies.png" alt="">
-                <a href="">See more</a>
+                {% comment %} <img src="{% static "images/SplashPlushies.png" %}" alt=""> {% endcomment %}
+                <br>
+                <a href="">See more</a> <br>
             </article>
-             <article class='inarticle'>
+
+            <article class='inarticle'>
                 <h2>Revamped Settings!</h2>
                 <p>We Changed the settings tab to be more user-friendly</p>
-                <a href="">See more</a>
+                <br>
+                <a href="">See more</a> <br>
             </article>
+
              <article class='inarticle'>
              <h2>Halloween Event</h2>
              <p>Buy new emotes to celebrate halloween!</p>
-             <a href="">See more</a>
+             <br>
+             <a href="">See more</a> <br>
             </article>
           
-           </article>
+        </div>
        
         </body>
         

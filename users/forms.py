@@ -48,12 +48,14 @@ class ChangePasswordForm(PasswordChangeForm):
 class ChangeEmailForm(UserChangeForm):
     password = None
     username = None
-    error_class = 'error-control'
+    css_error_class = 'error-text'
+    
     
     
     class Meta:
         model = User
         fields = ['email']
+        
         
         
     email = forms.CharField(label='', widget=forms.EmailInput(attrs={'placeholder': 'New Email',

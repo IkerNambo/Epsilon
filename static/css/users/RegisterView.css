@@ -21,6 +21,7 @@ html{
     color: aliceblue;
     margin: auto;
     width: 40%;
+    height: fit-content;
     margin-top: 10rem;
 }
 

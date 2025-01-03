@@ -12,9 +12,7 @@
     --icon-background-color: rgb(214, 214, 214);
 }
 
-body{
-    scrollbar-color: white, red,;
-}
+
 nav{
     background-color: var(--nav-background-color);
     justify-content: space-between;

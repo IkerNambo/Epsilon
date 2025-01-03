@@ -5,6 +5,7 @@
     <title>Epsilon Email change</title>
     <link rel="stylesheet" href="{% static "css/configuration/emailreset.css" %}">
     <link rel="stylesheet" href="{% static "css/configuration/globalconfig.css" %}">
+    
 </head>
 <body>
     
@@ -13,6 +14,7 @@
 
         <h2 class='title-wrapper'>Email Address Change</h2>   
         <form method="POST" class='form-control-config' name='emailchangeform' > {% csrf_token %}
+  
             {{form.as_p}}
         <button type="submit" value='' class='change-button-control'>Change</button>
 

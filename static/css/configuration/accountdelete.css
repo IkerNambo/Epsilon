@@ -15,7 +15,7 @@
     background-color: var(--div-background-color);
     border-radius: 1rem;
     width: 50%;
-    height: 50%;
+    height: fit-content;
     margin: auto;
     margin-top: 11rem;
     margin-bottom: 1rem;
@@ -31,4 +31,12 @@
 .delete-button-control{
     background-color: red;
     border: none;
+}
+
+.change-button-control{
+    margin-bottom: 1rem;
+}
+
+.return-button-control{
+    margin-top: 0.5rem;
 }

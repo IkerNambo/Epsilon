@@ -38,12 +38,12 @@ body{
 .form-wrapper{
     border-radius: 1rem;
     width: 50%;
-    height: 37%;
+   
     margin: auto;
     margin-top: 11rem;
     margin-bottom: 1rem;
     background-color: var(--form-background-color);
-    overflow: auto;
+   
 }
 
 
@@ -68,6 +68,7 @@ body{
 
 .change-button-control{
     margin-top:2rem;
+    margin-bottom: 2rem;
     border: solid;
     width: 10rem;
     height: 2rem;
