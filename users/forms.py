@@ -65,7 +65,7 @@ class ChangeEmailForm(UserChangeForm):
         email = self.cleaned_data['email']
         
         if User.objects.filter(email=email).exists():
-            raise ValidationError('Email is already in use ')
+            raise ValidationError('Email is already in use')
         return email
     
 class ChangePasswordForm(PasswordChangeForm):
@@ -82,6 +82,30 @@ class ChangePasswordForm(PasswordChangeForm):
         'placeholder': 'Confirm New password',
         'class': 'form-control-global password-control',
     }))
+
+
+class ChangeUsernameForm(UserChangeForm):
+    email = None
+    password = None
+    css_error_class = 'error-text'
     
-    
-    
+    class Meta:
+        model = User
+        fields = ['username']
+        help_texts = {
+            'username': None,
+        }
+        
+    username = forms.CharField(label='',max_length=20,widget=forms.TextInput(attrs={'placeholder': 'New username',
+                                                                'class': 'form-control-global',
+                                                                }))
+        
+    def clean_username(self):
+        username = self.cleaned_data['username']
+            
+        if User.objects.filter(username=username).exists():
+            raise ValidationError('Username is already in use')
+        return username
+        
+ 
+            

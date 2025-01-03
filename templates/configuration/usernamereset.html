@@ -15,6 +15,7 @@
     <div class='form-wrapper'>
       <button class='backbutton'><a href="{% url "Settings" %}"><svg id='arrowicon' xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg></a></button>  
       <h2 class='title-wrapper'>Username Change</h2>
+      <p style='text-align:center;'>Remember.. no spaces or special characters</p>
         {% for message in messages %}
         <div class='error-text name-error'>
             {{ message }} 
@@ -24,15 +25,7 @@
         <form method="POST" class='form-control-config'> {% csrf_token %}
 
             {{form.as_p}}
-            <div class="form-group">
-               
-                <input type="text" value='' class="form-control-global" name="username" placeholder="Username">
-                
-                <br>
-
-                {% comment %} <label class="">Confirm New Username</label>
-                <input type="text" class="form-control-global" name="username2" placeholder="Username"> {% endcomment %}
-            </div>
+            
             <button type="submit" value='' class='change-button-control'>Change</button>
 
         </form>

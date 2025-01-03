@@ -5,7 +5,7 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import authenticate
-from .forms import UserForm, ChangeEmailForm, ChangePasswordForm
+from .forms import UserForm, ChangeEmailForm, ChangePasswordForm, ChangeUsernameForm
 import time
 from django.contrib.auth import authenticate, login, logout
 from .mail import RegisterMail
@@ -68,21 +68,21 @@ def UserManageView(request, *blake, **belladona):
 def UsernameChangeView(request, *args, **kwargs):
     
     if request.user.is_authenticated == True:
+        form = ChangeUsernameForm()
+        
+        context = {
+            'form': form
+        }
+        
         if request.method == 'POST':
-            newusername = request.POST.get('username')
-            print(newusername)
-            user = request.user
-            userlength = len(newusername)
+            form = ChangeUsernameForm(request.POST, instance=request.user)
+            if form.is_valid():
+                form.save()
+                return redirect('Settings')
             
-            if newusername != '' and newusername is not None and userlength <= 20:
-              user.username = newusername  
-              user.save()
-              
-              return redirect('Settings')
-            else:
-                messages.error(request, 'Please enter a valid name')
-      
-        return render(request, 'configuration/usernamereset.html', {})
+            
+       
+        return render(request, 'configuration/usernamereset.html', context)
     else:
         return redirect('EmptyView')
 
